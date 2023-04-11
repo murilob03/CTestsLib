@@ -89,7 +89,7 @@ To use this type of test, follow these steps:
 ## Reading the Output
 The output will look like this:
 
-    **********************SINGLE TESTS**********************
+    **********************SIMPLE TESTS**********************
     Results:
     10101
     Passed: 2

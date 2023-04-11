@@ -218,7 +218,7 @@ void _run_tests(STester *tester)
         pos = TestsList.pop(list); //Gets the next test
     }
 
-    printf("**********************SINGLE TESTS**********************\n\n");
+    printf("**********************SIMPLE TESTS**********************\n\n");
 
     if (all_passed)
         printf("All tests successful!\n\n");
