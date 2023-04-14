@@ -46,7 +46,6 @@ _run_tests(tester); \
 _run_arr_tests(tester);
 
 #define PRINT_ELEMENT(element) \
-do { \
     _Generic((element), \
         char: printf("%c", (char)(element)), \
         int: printf("%d", (int)(element)), \
@@ -54,11 +53,9 @@ do { \
         float: printf("%.3f", (float)(element)), \
         double: printf("%.3lf", (double)(element)), \
         default: printf("Unsupported type") \
-    ); \
-} while (0)
+    ); 
 
 #define PRINT_ARRAY(arr, len) \
-do { \
     printf("["); \
     for (int i = 0; i < len; i++) { \
         PRINT_ELEMENT(arr[i]); \
@@ -66,8 +63,7 @@ do { \
             printf(", "); \
         } \
     } \
-    printf("]"); \
-} while (0)
+    printf("]"); 
 
 /* Prints a failed test in the folowing format:
 Line 'line': Expected-> 'A' / Tested-> 'B'*/
